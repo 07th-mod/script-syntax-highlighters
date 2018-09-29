@@ -1,0 +1,26 @@
+{
+    "name": "onscripter",
+    "displayName": "onscripter",
+    "description": "",
+    "version": "0.0.1",
+    "publisher": "me",
+    "engines": {
+        "vscode": "^1.27.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "onscripter",
+            "aliases": ["onscripter", "onscripter"],
+            "extensions": [".utf"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "onscripter",
+            "scopeName": "source.onscripter",
+            "path": "./syntaxes/onscripter.tmLanguage.json"
+        }]
+    }
+}

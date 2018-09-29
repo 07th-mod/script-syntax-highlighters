@@ -1,0 +1,26 @@
+{
+    "name": "higurashimg",
+    "displayName": "higurashiMG",
+    "description": "Language support for mangagamer style higurashi scripts",
+    "version": "0.0.1",
+    "publisher": "me",
+    "engines": {
+        "vscode": "^1.27.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "higurashimg",
+            "aliases": ["higurashiMG", "higurashimg"],
+            "extensions": [".txt"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "higurashimg",
+            "scopeName": "source.higurashimg",
+            "path": "./syntaxes/higurashimg.tmLanguage.json"
+        }]
+    }
+}

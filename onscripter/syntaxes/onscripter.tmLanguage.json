@@ -1,0 +1,95 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "onscripter",
+    "comment": "For some documentation on how to modify this file, see https://www.apeth.com/nonblog/stories/textmatebundle.html",
+	"patterns": [
+		{
+			"include": "#startOfLineWhitespace"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#keywords_noboundary"
+		},
+		{
+            "include": "#load"
+        },
+        {
+            "include": "#dwave"
+        },
+        {
+            "include": "#colon"
+        },
+        {
+            "include": "#hat"
+        },
+        {
+            "include": "#comment"
+        },
+        {
+            "include": "#text"
+		}
+	],
+	"repository": {
+        "dwave": {
+			"patterns": [{
+				"name": "support.function.utf",
+				"match": "dwave(_eng|_jp)?\\s+\\d+\\s*,\\s*(\\w+|\"[^\"]*\")"
+			}]
+		},
+		"load": {
+			"patterns": [{
+				"name": "support.function.utf",
+				"match": "_ld\\s+\\w+\\s*,[^,]+,\\d+"
+			}]
+		},
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.utf",
+				"match": "\\b(if|while|for|return|langen|langjp)(\\b|(?=[^\\x00-\\x7F]))"
+			}
+            ]
+		},
+		"keywords_noboundary": {
+			"patterns": [{
+				"name": "keyword.control.utf",
+				"match": "@|\\^"
+			}
+            ]
+		},
+		"strings": {
+			"name": "string.quoted.double.utf",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+			]
+		},
+        "colon": {
+			"patterns": [{
+				"name": "keyword.colon.utf",
+				"match": ":"
+			}]
+		},
+        "text": {
+			"patterns": [{
+				"name": "string.quoted.utf",
+				"match": "[^:;@\\^/\\\\]*"
+			}]
+		},
+        "comment": {
+			"patterns": [{
+				"name": "comment.comment.utf",
+				"match": ";.*$"
+			}]
+		},
+		"startOfLineWhitespace": {
+			"patterns": [{
+				"name": "comment.whitespace.utf",
+				"match": "^\\s+"
+			}]
+		}
+        
+	},
+	"scopeName": "source.onscripter"
+}
