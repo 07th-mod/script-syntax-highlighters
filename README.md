@@ -29,3 +29,5 @@ Note that you don't need to properly 'publish' the file to the marketplace, as i
 ## How to make a new laguage
 - Follow the instructions on this page to install and run 'Yo Code': https://code.visualstudio.com/docs/extensions/yocode
 - run `yo code` and choose `New Language Support`, then fill in the options you want.
+
+Some information about the language is here, but be warned it's not quite exactly the same syntax (it's for TextMate, not vsCode JSON): https://www.apeth.com/nonblog/stories/textmatebundle.html
