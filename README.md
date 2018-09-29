@@ -12,20 +12,20 @@ vscode language extensions for onscripter and mangagamer higurashi scripts
 
 # For Developers Only:
 
-# How to modify and test
+## How to modify and test
 - Open the extension folder (higurashimg/onscripter) in visual studio code (as a whole folder).
 - Hit F5 to start debugging. This will open a new vscode instance with the extension loaded.
 - Edit the .tmLangauge.json file in the syntax folder
 - Make sure vscode regonizes the .tmlLanguage.json file (eg it shows errors and syntax higlighting in the editor) otherwise it's hard to edit
 - Remember that trailing commas in arrays are NOT allowed.
 
-# How to export a language VSIX file
+## How to export a language VSIX file
 - Install npm for your system
 - Install vsce: `npm install -g vsce`
 - Run `vsce package` while inside the extension folder you want to export
 
 Note that you don't need to properly 'publish' the file to the marketplace, as is described on this page: https://code.visualstudio.com/docs/extensions/publish-extension
 
-# How to make a new laguage
+## How to make a new laguage
 - Follow the instructions on this page to install and run 'Yo Code': https://code.visualstudio.com/docs/extensions/yocode
 - run `yo code` and choose `New Language Support`, then fill in the options you want.
