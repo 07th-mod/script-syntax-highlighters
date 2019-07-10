@@ -2,6 +2,8 @@
 vscode language extensions for onscripter and mangagamer higurashi scripts
 
 # How to install and use the language extensions
+**NOTE: double clicking the .VSIX file to install the extension WILL FAIL. You MUST follow the instructions below!**
+
 - download the language extension package from the releases page
 - open vscode
 - click the "Extensions" button, or press CTRL-SHIFT-X
