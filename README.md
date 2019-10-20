@@ -10,7 +10,7 @@ vscode language extensions for onscripter and mangagamer higurashi scripts
 - click the 'three dots' menu button at the top of the left hand sidebar which popped up
 - click install from VSIX
 - after installation, you will be asked to reload vscode.
-- NOTE: all .txt files will use the mangagamer syntax, and all .utf files will use the onscripter syntax highlighting. you can manually change the highlighting method by clicking on the "Select Language Mode" button at the bottom right of the vscode window
+- NOTE: `.txt` files used by Higurashi won't have syntax highlighting by default and it has to be enabled manually. However, `.utf` and `.u` files will use the onscripter syntax highlighting by default. You can manually change the highlighting method by clicking on the "Select Language Mode" button at the bottom right of the vscode window
 
 # For Developers Only:
 
